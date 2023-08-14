@@ -1,0 +1,177 @@
+/* Basic Styles */
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Table Styles */
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, 
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Button Styles */
+.btn {
+  background: #428bca;
+  border: #357ebd solid 0px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 60px;
+  position: relative;
+  transition: color .1s ease;
+}
+
+.btn:hover {
+  background: #357ebd;
+}
+
+.btn.btn-big {
+  font-size: 18px;
+  padding: 15px 20px;
+  min-width: 100px;
+}
+
+/* Custom Buttons */
+.myButton, .btnDelete {
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  border-radius: 6px;
+  border: 1px solid;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #5b6178;
+}
+
+.myButton {
+  background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+  border-color: #057fd0;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+}
+
+.btnDelete {
+  background: linear-gradient(to bottom, #ff0505 5%, #f20808 100%);
+  border-color: #cf0606;
+}
+
+.btnDelete:hover {
+  background: linear-gradient(to bottom, #f20808 5%, #ff0505 100%);
+}
+
+.myButton:active, .btnDelete:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Modal Styles */
+.modale:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.opened:before {
+  display: block;
+}
+
+.modal-dialog {
+  background: #fefefe;
+  border: #333 solid 0px;
+  border-radius: 5px;
+  margin-left: -200px;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 360px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -500%);
+  transition: transform 0.3s ease-out;
+}
+
+.opened .modal-dialog {
+  transform: translate(0, 0);
+  top: 20%;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body input {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  color: #888;
+  outline: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.modal-header, .modal-footer {
+  padding: 10px 20px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+}
+
+.modal-header h2 {
+  font-size: 20px;
+}
+
+.btn-close {
+  color: #aaa;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  position: absolute;
+  right: 7px;
+  top: 0;
+}
+
+.btn-close:hover {
+  color: #919191;
+}
